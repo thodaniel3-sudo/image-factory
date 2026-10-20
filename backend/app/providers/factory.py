@@ -1,4 +1,4 @@
-from app.providers.base import BaseImageProvider
+﻿from app.providers.base import BaseImageProvider
 from app.providers.mock import MockImageProvider
 
 def get_provider(provider_name: str) -> BaseImageProvider:
