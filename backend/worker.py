@@ -8,7 +8,7 @@ from app.providers.factory import get_provider
 def process_image(prompt_record):
     print(f"Processing prompt: {prompt_record['prompt_text'][:50]}...")
     
-    provider = get_provider("mock")
+    provider = get_provider("huggingface")
     result = provider.generate(
         prompt=prompt_record['prompt_text'],
         width=prompt_record.get('width', 512),
